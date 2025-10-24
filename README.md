@@ -1,21 +1,2 @@
-# bun-react-template
-
-To install dependencies:
-
-```bash
-bun install
-```
-
-To start a development server:
-
-```bash
-bun dev
-```
-
-To run for production:
-
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.2.20. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+1. open this repo in VSCode, and in astro file, biome plugin will crash
+2. run `bunx biome lint` will throw error in `src/components/pay-layout.astro`, it seems like use a comment and variable in [Dynamic HTML](https://docs.astro.build/en/reference/astro-syntax/#dynamic-html)
