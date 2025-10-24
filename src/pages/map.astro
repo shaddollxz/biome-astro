@@ -1,0 +1,15 @@
+---
+// https://biomejs.dev/playground/?code=LQAtAC0ACgBjAG8AbgBzAHQAIABhAHIAcgAgAD0AIABbACIAYQAiACwAIAAiAGIAIgBdAAoALQAtAC0ACgA8AHUAbAA%2BAAoAIAAgAHsAYQByAHIALgBtAGEAcAAoACgAaQB0AGUAbQApAD0APgAgAHsACgAgACAAIAAgAHIAZQB0AHUAcgBuACAAKAAKACAAIAAgACAAIAAgADwAcwBwAGEAbgA%2BAHsAIABpAHQAZQBtACAAfQA8AC8AcwBwAGEAbgA%2BAAoAIAAgACAAIAApAAoAIAAgAH0AKQB9ACAAIAAKADwALwB1AGwAPgA%3D&language=astro
+
+const arr = ["a", "b"]
+---
+<ul>
+  {arr.map((item)=> {
+    return (
+      <div>
+        {/* must remove this line and next line */}
+        <span>{ item }</span>
+      </div>
+    )
+  })}
+</ul>

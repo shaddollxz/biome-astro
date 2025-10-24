@@ -115,7 +115,10 @@
     }
   },
   "html": {
-    "formatter": { "enabled": true },
+    "formatter": {
+      "enabled": true,
+      "selfCloseVoidElements": "always"
+    },
     "experimentalFullSupportEnabled": true
   },
   "overrides": [
