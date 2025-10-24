@@ -1,0 +1,134 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.3.0/schema.json",
+  "root": true,
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  },
+  "files": {
+    "ignoreUnknown": true
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedProperties": "off",
+        "useSortedAttributes": "off"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "attributePosition": "auto",
+    "bracketSpacing": true
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "react": "recommended"
+    },
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": "error",
+        "useVueDefineMacrosOrder": "error"
+      },
+      "suspicious": {
+        "noAlert": "error",
+        "noConsole": "error",
+        "noEmptyBlockStatements": "warn",
+        "noMisplacedAssertion": "error",
+        "noSkippedTests": "error",
+        "useAwait": "error"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "useButtonType": "off"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "noUselessStringConcat": "error",
+        "noUselessUndefinedInitialization": "error",
+        "noVoid": "error",
+        "useDateNow": "error",
+        "useSimplifiedLogicExpression": "error"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "warn",
+        "noUnusedFunctionParameters": "error",
+        "noUnusedImports": "error",
+        "noUnusedPrivateClassMembers": "error",
+        "noUnusedVariables": "error"
+      },
+      "style": {
+        "noNamespace": "error",
+        "noNegationElse": "error",
+        "noYodaExpression": "error",
+        "noNonNullAssertion": "off",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "generic"
+          }
+        },
+        "useConsistentBuiltinInstantiation": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"]
+          }
+        }
+      }
+    }
+  },
+  "javascript": {
+    "jsxRuntime": "transparent",
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "asNeeded",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  },
+  "css": {
+    "parser": { "tailwindDirectives": true },
+    "formatter": {
+      "quoteStyle": "single"
+    }
+  },
+  "html": {
+    "formatter": { "enabled": true },
+    "experimentalFullSupportEnabled": true
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ]
+}

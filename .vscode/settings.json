@@ -1,0 +1,10 @@
+{
+  "biome.requireConfiguration": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "[astro]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
